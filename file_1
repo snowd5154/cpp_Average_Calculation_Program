@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+
+	double odometerReadingBefore;
+	double odometerReadingAfter;
+	double averageMilesperGallon;
+	int gasolineDay1;
+	int gasolineDay2;
+	int gasolineDay3;
+	int gasolineDay4;
+	int gasolineDay5;
+	int sumOfGasoline;
+
+	cout << "Please enter the odometer reading before: ";
+	cin >> odometerReadingBefore;
+	cout << endl;
+	cout << "Please enter the odometer reading after: ";
+	cin >> odometerReadingAfter;
+	cout << endl;
+	cout << "Please enter the amount of gasoline used at first day: ";
+	cin >> gasolineDay1;
+	cout << endl;
+	cout << "Please enter the amount of gasoline used at second day: ";
+	cin >> gasolineDay2;
+	cout << endl;
+	cout << "Please enter the amount of gasoline used at third day: ";
+	cin >> gasolineDay3;
+	cout << endl;
+	cout << "Please enter the amount of gasoline used at fourth day: ";
+	cin >> gasolineDay4;
+	cout << endl;
+	cout << "Please enter the amount of gasoline used at fifth day: ";
+	cin >> gasolineDay5;
+	cout << endl;
+
+	sumOfGasoline = gasolineDay1 + gasolineDay2 + gasolineDay3 + gasolineDay4 + gasolineDay5;
+	averageMilesperGallon = (odometerReadingAfter - odometerReadingBefore) / sumOfGasoline;
+	cout << "Average miles per gallon is: " << averageMilesperGallon;
+	cout << "\n\n";
+
+	system("pause");
+	return 0;
+}
